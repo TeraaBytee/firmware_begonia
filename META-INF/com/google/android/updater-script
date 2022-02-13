@@ -5,8 +5,8 @@ ui_print("");
 ui_print("[*] Patching...");
 package_extract_file("lk.img", "/dev/block/platform/bootdevice/by-name/lk");
 package_extract_file("lk.img", "/dev/block/platform/bootdevice/by-name/lk2");
-package_extract_file("preloader_begonia_ufs.img", "/dev/block/sda");
-package_extract_file("preloader_begonia_ufs.img", "/dev/block/sdb");
+package_extract_file("preloader_ufs.img", "/dev/block/sda");
+package_extract_file("preloader_ufs.img", "/dev/block/sdb");
 package_extract_file("audio_dsp.img", "/dev/block/platform/bootdevice/by-name/audio_dsp");
 package_extract_file("cam_vpu1.img", "/dev/block/platform/bootdevice/by-name/cam_vpu1");
 package_extract_file("cam_vpu2.img", "/dev/block/platform/bootdevice/by-name/cam_vpu2");
@@ -28,6 +28,4 @@ package_extract_file("gsort.img", "/dev/block/platform/bootdevice/by-name/gsort"
 
 package_extract_file("boot.img", "/dev/block/platform/bootdevice/by-name/boot");
 package_extract_file("dtbo.img", "/dev/block/platform/bootdevice/by-name/dtbo");
-package_extract_file("recovery.img", "/dev/block/platform/bootdevice/by-name/recovery");
-package_extract_file("vbmeta.img", "/dev/block/platform/bootdevice/by-name/vbmeta");
 set_progress(1.000000);
